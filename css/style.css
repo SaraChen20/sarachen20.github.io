@@ -157,8 +157,8 @@
     .Work-content {
         display: flex;
         flex-direction: row;
-        align-items: center;
-        margin: 20px 0;
+        /* align-items: center; */
+        margin: 20px 10px;
         background-color: #fafafa;
     }
 
@@ -198,7 +198,7 @@
         }
 
         .about-img{
-            width: 25%;
+            width: 50%;
         }
 
         .about-info {
