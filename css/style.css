@@ -157,18 +157,17 @@
     .Work-content {
         display: flex;
         flex-direction: row;
-        /* align-items: center; */
         margin: 20px 10px;
         background-color: #fafafa;
     }
 
-    .work-gallery {
+    .work-garllery{
         display: grid;
         grid-gap: 40px;
-        justify-content: center;
         align-items: center;
+        justify-items: center ;
         grid-template-columns: auto auto;
-        padding: 10px;
+        padding: 30px;
     }
       
     .work-img {
@@ -189,12 +188,10 @@
         .about-content {
             flex-direction: row;
         }
-
-            }
+    }
     @media only screen and (min-width: 1px) and (max-width: 767px) {
         .about-content {
             flex-direction: column;
-
         }
 
         .about-img{
