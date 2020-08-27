@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    
+    body {
+        font-family: "Montserrat",sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 15%;
+        box-shadow: 0 8px 6px -6px rgba(0,0,0,.3);
+    }
+
+    li , a {
+        color: #b22222;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    .navbar {
+        list-style: none;
+        
+    }
+
+    .navbar li {
+        display: inline;
+        padding-left: 30px;
+        letter-spacing: 1px;
+    }
+    
+    .navbar li a{
+        text-align: center;
+        padding-bottom: 3px;
+    }
+
+    .navbar li a:hover {
+        border-bottom: solid 1px #b22222;
+        font-size: 20px;
+    }
+
+    .banner {
+        margin-top: 1px;
+        background-image: url(../images/banner.png);
+        width: 100%;
+        height: 700px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .banner-info {
+        color: #b22222 ;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 72px;
+        height: 80vh;
+        letter-spacing: 0.5em;
+    }
+
+    .banner-title {
+        animation-name: move;
+        animation-duration:2s;
+        transform: translateX(-1900px);
+        animation-fill-mode: forwards;
+      }
+      
+      @keyframes move {
+        0% {
+          transform: translateX(-1900px);
+        }
+        100% {
+          transform: translateX(0px);
+        }
+      }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row {
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0;
+    }
+    
+    .about-title {
+        position: relative;
+        text-align: center;
+        padding-bottom: 50px;
+        font-size: 48px;
+        background-image: url(../images/01.png) ;
+        background-position: center;
+        background-size: 175px;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+    .about-content {
+        width: 1280px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .about-img{
+        float: left;
+    }
+    
+    .about-info{
+        padding: 2px 8px;
+        float: right;
+    }
+
+    .title {
+        font-size: 36px;
+        color: #b22222;
+    }
+
+    .content {
+        line-height: 1.5em;
+        letter-spacing: 2px;
+    }
+    
+    .work {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0;
+    }
+    
+    .work-title {
+        position: relative;
+        text-align: center;
+        padding-bottom: 50px;
+        font-size: 48px;
+        background-image: url(../images/02.png) ;
+        background-position: center;
+        background-size: 175px;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+    .Work-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 20px 0;
+        background-color: #fafafa;
+    }
+
+    .work-gallery {
+        display: grid;
+        grid-gap: 40px;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: auto auto;
+        padding: 10px;
+    }
+      
+    .work-img {
+        min-width: 300px;
+        max-width: 600px;
+        padding: 20px;
+        text-align: center;
+    }   
+
+    .footer-content {
+        text-align:center;
+        height: 50px;
+        padding: 10px 10px;
+        box-shadow: -6px -1px 2px 0 rgba(0,0,0,.3);
+    }
+
+    @media (min-width: 1366px) {
+        .about-content {
+            flex-direction: row;
+        }
+
+            }
+    @media only screen and (min-width: 1px) and (max-width: 767px) {
+        .about-content {
+            flex-direction: column;
+
+        }
+
+        .about-img{
+            width: 25%;
+        }
+
+        .about-info {
+            overflow: hidden;
+        }
+    }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/logo.png">
+        <nav>
+            <ul class="navbar">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="#work">Work</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="banner">
+        <div id="word" class="banner-info">Hello!</div>
+    </div>
+    <div class="container">
+        <div class="about" id="about">
+            <div class="about-title">ABOUT</div>            
+            <div class="about-content">
+                <img class="about-img" src="images/about.png">
+                <div class="about-info">
+                    <h2 class="title">Sara Chen</h2>
+                    <p class="content">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                   
+                </div>
+            </div> 
+        </div>
+
+        <div class="Work" id="work">
+            <div class="work-title">WORK</div>            
+                <div class="Work-content">
+                    <div class="work-garllery">
+                        <img class="work-img" src="https://unsplash.it/800?random">
+                        <img class="work-img" src="https://unsplash.it/800?random">
+                        <img class="work-img" src="https://unsplash.it/800?random">
+                        <img class="work-img" src="https://unsplash.it/800?random">
+                        <img class="work-img" src="https://unsplash.it/800?random">
+                        <img class="work-img" src="https://unsplash.it/800?random">
+                    </div> 
+                </div>
+             </div>
+        </div>
+
+    <footer class="footer-content">2020/08/27 SaraChen</footer>
+    <!-- Banner文字效果 -->
+    <script>
+        function charToHTML(c, i){
+        return `<span class="banner-title" style="animation-delay: ${i*0.5}s">${c}</span>`;
+        }
+
+        var title = document.getElementById("word");
+        var charArray = title.innerHTML.split("")
+
+        title.innerHTML = charArray.map(charToHTML).join("")
+    </script>
+</body>
+</html>
