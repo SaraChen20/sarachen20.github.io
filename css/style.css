@@ -166,7 +166,7 @@
         grid-gap: 40px;
         align-items: center;
         justify-items: center ;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto;
         padding: 30px;
     }
       
